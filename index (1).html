@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mironshoh Hikmatov — Offline SMM mentorlik</title>
+<meta name="description" content="Mironshoh Hikmatov bilan 1 oylik offline SMM mentorlik: 16 ta dars, Target va Mobilografiya bonus darslari, mehmon speakerlar.">
+<meta property="og:title" content="Offline SMM mentorlik — Mironshoh Hikmatov">
+<meta property="og:description" content="1 oy, 16 ta amaliy dars, Target va Mobilografiya bonus darslari.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og.png">
+<meta name="theme-color" content="#0d0d0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5b22'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='800' font-size='26' text-anchor='middle' fill='%230d0d0c'%3EMH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d0d0c;
+  --surface: #161614;
+  --line: #2a2a27;
+  --text: #f3f1ec;
+  --muted: #a3a097;
+  --accent: #ff5b22;
+  --on-accent: #0d0d0c;
+  --radius: 14px;
+  --space: 8px;
+  --max: 1200px;
+  --font-head: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --font: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 700; line-height: 1.08; margin: 0; letter-spacing: -0.02em; }
+p { margin: 0; }
+
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 calc(var(--space) * 2.5); }
+section { padding: calc(var(--space) * 10) 0; border-top: 1px solid var(--line); scroll-margin-top: 68px; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: var(--space);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted);
+}
+.eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
+.h2 { font-size: clamp(1.75rem, 5vw, 3rem); margin-top: calc(var(--space) * 2); max-width: 16ch; }
+.lead { color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.2rem); max-width: 52ch; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space);
+  min-height: 56px; padding: 0 calc(var(--space) * 3.5);
+  border-radius: 999px; border: 1px solid transparent;
+  font-family: var(--font); font-weight: 700; font-size: 16px; text-decoration: none;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+  cursor: pointer;
+}
+.btn-primary { background: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { transform: translateY(-2px); }
+.btn-ghost { border-color: var(--line); color: var(--text); }
+.btn-ghost:hover { border-color: var(--text); }
+.btn svg { width: 18px; height: 18px; }
+
+/* placeholder marker: easy to find & replace later */
+.ph { color: var(--accent); border-bottom: 1px dashed var(--accent); }
+
+/* Header */
+.top {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(13,13,12,0.85);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.logo { font-family: var(--font-head); font-weight: 700; font-size: 15px; text-decoration: none; letter-spacing: -0.01em; }
+.logo span { color: var(--accent); }
+.top nav { display: none; gap: calc(var(--space) * 4); font-size: 15px; font-weight: 500; }
+.top nav a { text-decoration: none; color: var(--muted); }
+.top nav a:hover { color: var(--text); }
+.top .btn { min-height: 44px; padding: 0 calc(var(--space) * 2.5); font-size: 15px; }
+
+/* Hero */
+.hero { border-top: 0; padding: calc(var(--space) * 6) 0 calc(var(--space) * 8); }
+.hero-grid { display: grid; gap: calc(var(--space) * 5); }
+.hero h1 { font-size: clamp(2.2rem, 8vw, 4.6rem); margin: calc(var(--space) * 2.5) 0; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero .lead { margin-bottom: calc(var(--space) * 4); }
+.hero-cta { display: flex; flex-wrap: wrap; gap: calc(var(--space) * 1.5); }
+.hero-cta .btn { flex: 1 1 auto; }
+.start-note { margin-top: calc(var(--space) * 2.5); font-size: 15px; color: var(--muted); }
+
+.photo {
+  position: relative; aspect-ratio: 4 / 5; border-radius: var(--radius);
+  background:
+    radial-gradient(120% 80% at 70% 0%, #2b2219 0%, transparent 60%),
+    var(--surface);
+  border: 1px solid var(--line); overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.photo .initials { font-family: var(--font-head); font-size: clamp(4rem, 18vw, 8rem); color: #26241f; }
+.photo .tag {
+  position: absolute; left: calc(var(--space) * 2); bottom: calc(var(--space) * 2); right: calc(var(--space) * 2);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
+  padding: calc(var(--space) * 1.5) calc(var(--space) * 2);
+  display: flex; justify-content: space-between; align-items: center; gap: var(--space);
+  font-size: 14px;
+}
+.photo .tag b { font-family: var(--font-head); font-weight: 500; font-size: 14px; }
+.photo .tag small { color: var(--muted); font-size: 13px; }
+
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: calc(var(--space) * 6); border-top: 1px solid var(--line); }
+.stat { padding: calc(var(--space) * 2.5) var(--space) 0 0; }
+.stat + .stat { padding-left: calc(var(--space) * 2); border-left: 1px solid var(--line); }
+.stat strong { display: block; font-family: var(--font-head); font-size: clamp(1.6rem, 6vw, 2.6rem); line-height: 1; }
+.stat span { display: block; margin-top: var(--space); color: var(--muted); font-size: 14px; line-height: 1.35; }
+
+/* About */
+.about-grid { display: grid; gap: calc(var(--space) * 4); }
+.about-text p + p { margin-top: calc(var(--space) * 2); }
+.about-text p { color: var(--muted); }
+.about-text p strong { color: var(--text); font-weight: 600; }
+
+/* Format list */
+.rows { margin-top: calc(var(--space) * 5); border-top: 1px solid var(--line); }
+.row {
+  display: grid; grid-template-columns: 44px 1fr; gap: calc(var(--space) * 2);
+  padding: calc(var(--space) * 3) 0; border-bottom: 1px solid var(--line);
+}
+.row .n { font-family: var(--font-head); font-size: 14px; color: var(--accent); padding-top: 4px; }
+.row h3 { font-size: clamp(1.15rem, 3vw, 1.5rem); font-weight: 500; }
+.row p { grid-column: 2; color: var(--muted); margin-top: var(--space); max-width: 56ch; }
+
+/* Program */
+.weeks { display: grid; gap: calc(var(--space) * 2); margin-top: calc(var(--space) * 5); }
+.week { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: calc(var(--space) * 3); }
+.week-head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space); margin-bottom: calc(var(--space) * 2); }
+.week-head span { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.week-head h3 { font-size: 1.15rem; font-weight: 500; }
+.week ol { list-style: none; margin: 0; padding: 0; counter-reset: l var(--start); }
+.week li { counter-increment: l; display: flex; gap: calc(var(--space) * 1.5); padding: calc(var(--space) * 1.25) 0; border-top: 1px solid var(--line); font-size: 16px; }
+.week li::before { content: counter(l, decimal-leading-zero); color: var(--muted); font-variant-numeric: tabular-nums; min-width: 2ch; }
+
+/* Bonus */
+.bonus { background: var(--accent); color: var(--on-accent); border-top: 0; }
+.bonus .eyebrow { color: var(--on-accent); }
+.bonus .eyebrow::before { background: var(--on-accent); }
+.bonus-list { margin-top: calc(var(--space) * 5); border-top: 1px solid rgba(13,13,12,.25); }
+.bonus-item { display: grid; gap: var(--space); padding: calc(var(--space) * 3) 0; border-bottom: 1px solid rgba(13,13,12,.25); }
+.bonus-item h3 { font-size: clamp(1.5rem, 5vw, 2.6rem); }
+.bonus-item p { font-weight: 500; max-width: 48ch; }
+
+/* For whom */
+.who { display: grid; gap: calc(var(--space) * 1.5); margin-top: calc(var(--space) * 5); }
+.who li {
+  list-style: none; display: flex; gap: calc(var(--space) * 2); align-items: flex-start;
+  padding: calc(var(--space) * 2.5); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.who ul { margin: 0; padding: 0; display: contents; }
+.who svg { flex: none; width: 22px; height: 22px; color: var(--accent); margin-top: 2px; }
+.who b { display: block; font-weight: 700; }
+.who span { color: var(--muted); font-size: 16px; }
+
+/* Price */
+.price-card {
+  margin-top: calc(var(--space) * 5);
+  border: 1px solid var(--line); border-radius: calc(var(--radius) * 1.5);
+  background: var(--surface); overflow: hidden;
+  display: grid;
+}
+.price-main { padding: calc(var(--space) * 4) calc(var(--space) * 3); }
+.price-main small { color: var(--muted); font-weight: 600; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+.price-num { font-family: var(--font-head); font-size: clamp(3.5rem, 14vw, 6rem); line-height: 1; margin: calc(var(--space) * 2) 0 var(--space); }
+.price-num sup { font-size: .4em; vertical-align: top; position: relative; top: .35em; margin-left: 4px; color: var(--accent); }
+.price-main p { color: var(--muted); margin-bottom: calc(var(--space) * 4); }
+.price-main .btn { width: 100%; }
+.price-inc { padding: calc(var(--space) * 4) calc(var(--space) * 3); border-top: 1px solid var(--line); }
+.price-inc h3 { font-family: var(--font); font-size: 15px; font-weight: 700; margin-bottom: calc(var(--space) * 2); }
+.price-inc ul { list-style: none; margin: 0; padding: 0; }
+.price-inc li { display: flex; gap: calc(var(--space) * 1.5); padding: calc(var(--space) * 1.25) 0; border-top: 1px solid var(--line); font-size: 16px; }
+.price-inc li::before { content: ""; flex: none; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: var(--accent); }
+
+
+/* Lead form */
+.form-grid { display: grid; gap: calc(var(--space) * 5); }
+.form-lead { margin-top: calc(var(--space) * 2.5); }
+.form-lead a { color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.lead-form {
+  background: var(--surface); border: 1px solid var(--line); border-radius: calc(var(--radius) * 1.5);
+  padding: calc(var(--space) * 3); display: grid; gap: calc(var(--space) * 2.5);
+}
+.field { display: grid; gap: var(--space); }
+.field label { font-size: 15px; font-weight: 600; }
+.field .opt { color: var(--muted); font-weight: 500; }
+.field input, .field select {
+  width: 100%; min-height: 54px; padding: 0 calc(var(--space) * 2);
+  background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 10px;
+  font: 500 16px/1.2 var(--font); outline: none; transition: border-color .2s ease;
+  -webkit-appearance: none; appearance: none;
+}
+.field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3a097' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center; background-size: 18px; padding-right: 44px;
+}
+.field input::placeholder { color: #6d6a62; }
+.field input:focus, .field select:focus { border-color: var(--accent); }
+.field.invalid input { border-color: #ff6b6b; }
+.err { display: none; color: #ff8a80; font-size: 14px; }
+.field.invalid .err { display: block; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.lead-form .btn { width: 100%; margin-top: var(--space); }
+.lead-form .btn[disabled] { opacity: .6; cursor: wait; transform: none; }
+.form-status { min-height: 1.4em; font-size: 15px; font-weight: 600; text-align: center; }
+.form-status.ok { color: #7ddc8f; }
+.form-status.bad { color: #ff8a80; }
+.form-status a { color: inherit; }
+
+/* FAQ */
+.faq { margin-top: calc(var(--space) * 5); border-top: 1px solid var(--line); }
+details { border-bottom: 1px solid var(--line); }
+summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: calc(var(--space) * 2);
+  min-height: 64px; padding: calc(var(--space) * 2) 0; font-weight: 600; font-size: 17px;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-family: var(--font-head); font-size: 22px; color: var(--accent); transition: transform .2s ease; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { color: var(--muted); padding-bottom: calc(var(--space) * 2.5); max-width: 64ch; }
+
+/* Final CTA */
+.final { text-align: left; }
+.final h2 { font-size: clamp(2rem, 7vw, 4.2rem); max-width: 14ch; }
+.final .lead { margin: calc(var(--space) * 2.5) 0 calc(var(--space) * 4); }
+.final-cta { display: flex; flex-wrap: wrap; gap: calc(var(--space) * 1.5); }
+.final-cta .btn { flex: 1 1 auto; }
+
+footer { border-top: 1px solid var(--line); padding: calc(var(--space) * 4) 0; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: calc(var(--space) * 2); }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--text); }
+
+/* Entrance */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .btn { transition: none; }
+}
+
+/* Tablet+ */
+@media (min-width: 768px) {
+  .wrap { padding: 0 calc(var(--space) * 4); }
+  section { padding: calc(var(--space) * 14) 0; }
+  .top nav { display: flex; }
+  .hero { padding: calc(var(--space) * 10) 0 calc(var(--space) * 12); }
+  .hero-cta .btn, .final-cta .btn { flex: 0 0 auto; }
+  .row { grid-template-columns: 80px 1fr 1fr; align-items: baseline; }
+  .row p { grid-column: auto; margin-top: 0; }
+  .weeks { grid-template-columns: repeat(2, 1fr); }
+  .bonus-item { grid-template-columns: 1fr 1fr; align-items: baseline; gap: calc(var(--space) * 4); }
+  .who { grid-template-columns: repeat(2, 1fr); }
+  .price-card { grid-template-columns: 1fr 1fr; }
+  .price-main, .price-inc { padding: calc(var(--space) * 6); }
+  .price-inc { border-top: 0; border-left: 1px solid var(--line); }
+  .lead-form { padding: calc(var(--space) * 5); }
+}
+@media (min-width: 1024px) {
+  .hero-grid { grid-template-columns: 1.25fr 1fr; align-items: center; gap: calc(var(--space) * 8); }
+  .about-grid { grid-template-columns: 1fr 1fr; gap: calc(var(--space) * 8); align-items: start; }
+  .weeks { grid-template-columns: repeat(4, 1fr); }
+  .form-grid { grid-template-columns: 1fr 1fr; gap: calc(var(--space) * 8); align-items: start; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">Mironshoh<span>.</span>SMM</a>
+    <nav aria-label="Asosiy">
+      <a href="#ustoz">Ustoz</a>
+      <a href="#dastur">Dastur</a>
+      <a href="#bonus">Bonuslar</a>
+      <a href="#narx">Narx</a>
+      <a href="#savollar">Savollar</a>
+    </nav>
+    <a class="btn btn-primary" href="#ariza">Yozilish</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Offline mentorlik · 1 oy</span>
+          <h1>SMM kasbini ustoz yonida <em>amaliyotda</em> o‘rganing</h1>
+          <p class="lead">16 ta jonli dars, haqiqiy loyihalar ustida ishlash va 4 yillik tajribaga ega mentor bilan bevosita aloqa. Dastur asoslardan mijoz bilan ishlash darajasigacha olib boradi.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#ariza">
+              Kursga yozilish
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#dastur">Dastur bilan tanishish</a>
+          </div>
+          <p class="start-note">Keyingi guruh: <span class="ph">[sana]</span> · Joylar soni cheklangan</p>
+        </div>
+
+        <div class="photo reveal" aria-label="Mironshoh Hikmatov surati">
+          <img src="mironshoh.jpg" alt="Mironshoh Hikmatov" width="699" height="873" fetchpriority="high">
+          <div class="tag">
+            <div><b>Mironshoh Hikmatov</b><br><small>SMM mutaxassis, mentor</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><strong>4 yil</strong><span>SMM sohasida tajriba</span></div>
+        <div class="stat"><strong>30+</strong><span>amalga oshirilgan loyiha</span></div>
+        <div class="stat"><strong>16</strong><span>jonli offline dars</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="ustoz">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <span class="eyebrow">Ustoz haqida</span>
+        <h2 class="h2">Nazariyani emas, ishlaydigan tajribani o‘rgataman</h2>
+      </div>
+      <div class="about-text reveal">
+        <p><strong>Mironshoh Hikmatov</strong> 4 yildan beri SMM bilan shug‘ullanadi va shu vaqt ichida 30 dan ortiq loyihani yuritgan.</p>
+        <p>Kursda u o‘z ish jarayonini ochiq ko‘rsatadi: loyiha qanday boshlanadi, kontent qanday rejalashtiriladi, natija qanday o‘lchanadi va mijoz bilan qanday ishlanadi.</p>
+        <p>Format offline bo‘lgani uchun har bir savolingizga shu yerning o‘zida javob olasiz, ishlaringiz esa shaxsan tekshiriladi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAT -->
+  <section id="format">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Kurs formati</span>
+        <h2 class="h2">Qanday o‘qiysiz</h2>
+      </div>
+      <div class="rows">
+        <div class="row reveal"><span class="n">01</span><h3>Offline darslar</h3><p>Darslar jonli, guruhda o‘tadi. Manzil: <span class="ph">[shahar, manzil]</span>.</p></div>
+        <div class="row reveal"><span class="n">02</span><h3>1 oy, 16 ta dars</h3><p>Haftasiga 4 ta dars. Jadval: <span class="ph">[kunlar va vaqt]</span>.</p></div>
+        <div class="row reveal"><span class="n">03</span><h3>Amaliy vazifalar</h3><p>Har bir mavzudan keyin vazifa bajarasiz va mentordan fikr olasiz.</p></div>
+        <div class="row reveal"><span class="n">04</span><h3>Mehmon speakerlar</h3><p>Sohadagi kuchli mutaxassislar o‘z tajribasi bilan bo‘lishadi.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM -->
+  <section id="dastur">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Dastur</span>
+        <h2 class="h2">16 dars, 4 hafta</h2>
+      </div>
+      <div class="weeks">
+        <div class="week reveal">
+          <div class="week-head"><span>1-hafta</span><h3>Asoslar</h3></div>
+          <ol style="--start:0">
+            <li>SMM kasbi va bozor</li>
+            <li>Nisha va auditoriya tahlili</li>
+            <li>Profilni qadoqlash</li>
+            <li>Kontent strategiya</li>
+          </ol>
+        </div>
+        <div class="week reveal">
+          <div class="week-head"><span>2-hafta</span><h3>Kontent</h3></div>
+          <ol style="--start:4">
+            <li>Kontent-reja tuzish</li>
+            <li>Copywriting</li>
+            <li>Reels ssenariylari</li>
+            <li>Vizual uslub va dizayn</li>
+          </ol>
+        </div>
+        <div class="week reveal">
+          <div class="week-head"><span>3-hafta</span><h3>O‘sish</h3></div>
+          <ol style="--start:8">
+            <li>Instagram algoritmlari</li>
+            <li>Sotuvchi Stories</li>
+            <li>Telegram kanal yuritish</li>
+            <li>Blogerlar bilan reklama</li>
+          </ol>
+        </div>
+        <div class="week reveal">
+          <div class="week-head"><span>4-hafta</span><h3>Kasb</h3></div>
+          <ol style="--start:12">
+            <li>Analitika va hisobot</li>
+            <li>Mijoz topish</li>
+            <li>Narx belgilash va shartnoma</li>
+            <li>Yakuniy loyiha himoyasi</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUS -->
+  <section id="bonus" class="bonus">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Bonuslar</span>
+        <h2 class="h2">Narxga qo‘shimcha ravishda</h2>
+      </div>
+      <div class="bonus-list">
+        <div class="bonus-item reveal"><h3>Target</h3><p>Instagram va Facebook’da pullik reklamani sozlash: auditoriya tanlash, byudjet va natijani o‘lchash.</p></div>
+        <div class="bonus-item reveal"><h3>Mobilografiya</h3><p>Faqat telefon bilan sifatli video va foto olish, Reels uchun montaj.</p></div>
+        <div class="bonus-item reveal"><h3>Speakerlar</h3><p>Sohaning kuchli mutaxassislari bilan uchrashuvlar va savol-javob.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section id="kimlar">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Kimlar uchun</span>
+        <h2 class="h2">Bu kurs sizga mos, agar</h2>
+      </div>
+      <div class="who">
+        <ul>
+          <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>SMM’ni noldan boshlamoqchisiz</b><span>Talab yuqori kasbni tizimli o‘rganmoqchisiz.</span></div></li>
+          <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>SMM qilasiz, lekin natija yo‘q</b><span>Bilimlaringizni tartibga solib, kuchaytirmoqchisiz.</span></div></li>
+          <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>O‘z biznesingiz bor</b><span>Sahifangizni o‘zingiz yuritishni xohlaysiz.</span></div></li>
+          <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>Onlayn kurslar sizga mos kelmaydi</b><span>Jonli muloqot va shaxsiy nazorat muhim.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section id="narx">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Narx</span>
+        <h2 class="h2">Bitta tarif, hammasi ichida</h2>
+      </div>
+      <div class="price-card reveal">
+        <div class="price-main">
+          <small>Offline mentorlik · 1 oy</small>
+          <div class="price-num">500<sup>$</sup></div>
+          <p>Ariza qoldiring — siz bilan bog‘lanib, guruh va to‘lov haqida batafsil aytib beramiz.</p>
+          <a class="btn btn-primary" href="#ariza">Joyni band qilish</a>
+        </div>
+        <div class="price-inc">
+          <h3>Narxga kiradi</h3>
+          <ul>
+            <li>16 ta jonli offline dars</li>
+            <li>Har bir mavzu bo‘yicha amaliy vazifa va tekshiruv</li>
+            <li>Mentor bilan bevosita aloqa</li>
+            <li>Bonus: Target darsi</li>
+            <li>Bonus: Mobilografiya darsi</li>
+            <li>Mehmon speakerlar bilan uchrashuvlar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section id="ariza">
+    <div class="wrap form-grid">
+      <div class="reveal">
+        <span class="eyebrow">Ariza</span>
+        <h2 class="h2">Kursga yozilish</h2>
+        <p class="lead form-lead">Ma’lumotlaringizni qoldiring — tez orada siz bilan bog‘lanamiz. Shoshilinch savol bo‘lsa, <a href="https://t.me/+998913113817" target="_blank" rel="noopener">Telegramda yozing</a>.</p>
+      </div>
+      <form class="lead-form reveal" id="leadForm" novalidate>
+        <div class="field">
+          <label for="f-name">Ismingiz</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Ismingizni yozing">
+          <small class="err" data-for="name">Ismingizni kiriting</small>
+        </div>
+        <div class="field">
+          <label for="f-phone">Telefon raqam</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20" placeholder="+998 90 123 45 67" value="+998 ">
+          <small class="err" data-for="phone">Telefon raqamni to‘liq kiriting</small>
+        </div>
+        <div class="field">
+          <label for="f-tg">Telegram username <span class="opt">(ixtiyoriy)</span></label>
+          <input id="f-tg" name="telegram" type="text" autocomplete="off" maxlength="40" placeholder="@username">
+          <small class="err" data-for="telegram">Username noto‘g‘ri, masalan: @mironshoh</small>
+        </div>
+        <div class="field">
+          <label for="f-level">SMM bo‘yicha tajribangiz</label>
+          <select id="f-level" name="level">
+            <option value="zero">Noldan boshlayman</option>
+            <option value="some">Biroz tajribam bor</option>
+            <option value="pro">SMM bilan ishlayman</option>
+          </select>
+        </div>
+        <div class="hp" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn-primary" type="submit">Ariza yuborish</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="savollar">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Savollar</span>
+        <h2 class="h2">Ko‘p beriladigan savollar</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary>Avval SMM bilan ishlamaganman. Kurs menga mos keladimi?</summary><p>Ha. Dastur asoslardan boshlanadi va bosqichma-bosqich mijoz bilan ishlash darajasigacha olib boradi.</p></details>
+        <details class="reveal"><summary>Darslar qayerda va qachon o‘tadi?</summary><p>Manzil: <span class="ph">[shahar, manzil]</span>. Jadval: <span class="ph">[kunlar va vaqt]</span>.</p></details>
+        <details class="reveal"><summary>Darsga nima olib kelish kerak?</summary><p>Smartfon kifoya. Noutbukingiz bo‘lsa, uni ham olib keling.</p></details>
+        <details class="reveal"><summary>To‘lovni qanday qilaman?</summary><p><span class="ph">[to‘lov usullari va bo‘lib to‘lash shartlari]</span></p></details>
+        <details class="reveal"><summary>Qanday yozilaman?</summary><p>Saytdagi formani to‘ldiring yoki Telegram orqali +998 91 311 38 17 raqamiga yozing. Sizga guruh va to‘lov haqida batafsil ma’lumot beramiz.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="wrap reveal">
+      <span class="eyebrow">Keyingi guruh</span>
+      <h2 class="h2">SMM kasbiga birinchi jiddiy qadamni qo‘ying</h2>
+      <p class="lead">Joylar soni cheklangan. Hoziroq yozing va keyingi guruhdagi o‘rningizni band qiling.</p>
+      <div class="final-cta">
+        <a class="btn btn-primary" href="#ariza">Ariza qoldirish</a>
+        <a class="btn btn-ghost" href="https://t.me/+998913113817" target="_blank" rel="noopener">Telegramda yozish</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mironshoh Hikmatov</span>
+    <span><a href="https://t.me/+998913113817" target="_blank" rel="noopener">Telegram</a> · <a href="tel:+998913113817">+998 91 311 38 17</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (e) { io.observe(e); });
+})();
+
+(function () {
+  var form = document.getElementById('leadForm');
+  if (!form) return;
+  var status = form.querySelector('.form-status');
+  var btn = form.querySelector('button[type=submit]');
+  var TG_LINK = '<a href="https://t.me/+998913113817" target="_blank" rel="noopener">Telegramda yozing</a>';
+
+  function setErr(name, on) {
+    var el = form.elements[name];
+    el.closest('.field').classList.toggle('invalid', on);
+    el.setAttribute('aria-invalid', on ? 'true' : 'false');
+  }
+  function validate() {
+    var name = form.elements.name.value.trim();
+    var digits = form.elements.phone.value.replace(/\D/g, '');
+    var tg = form.elements.telegram.value.trim().replace(/^@/, '');
+    var bad = {
+      name: name.length < 2,
+      phone: digits.length < 12 || digits.length > 15,
+      telegram: tg !== '' && !/^[A-Za-z0-9_]{4,32}$/.test(tg)
+    };
+    Object.keys(bad).forEach(function (k) { setErr(k, bad[k]); });
+    var first = Object.keys(bad).filter(function (k) { return bad[k]; })[0];
+    if (first) form.elements[first].focus();
+    return !first;
+  }
+  ['name', 'phone', 'telegram'].forEach(function (n) {
+    form.elements[n].addEventListener('input', function () { setErr(n, false); });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'form-status'; status.textContent = '';
+    if (!validate()) return;
+    btn.disabled = true; btn.textContent = 'Yuborilmoqda…';
+    var payload = {
+      name: form.elements.name.value.trim(),
+      phone: form.elements.phone.value.trim(),
+      telegram: form.elements.telegram.value.trim(),
+      level: form.elements.level.value,
+      website: form.elements.website.value
+    };
+    fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { return r.ok && d.ok; }); })
+      .catch(function () { return false; })
+      .then(function (ok) {
+        btn.disabled = false; btn.textContent = 'Ariza yuborish';
+        if (ok) {
+          form.reset(); form.elements.phone.value = '+998 ';
+          status.className = 'form-status ok';
+          status.textContent = 'Rahmat! Arizangiz qabul qilindi. Tez orada siz bilan bog‘lanamiz.';
+        } else {
+          status.className = 'form-status bad';
+          status.innerHTML = 'Xatolik yuz berdi. Iltimos, qayta urinib ko‘ring yoki ' + TG_LINK + '.';
+        }
+      });
+  });
+})();
+</script>
+</body>
+</html>
